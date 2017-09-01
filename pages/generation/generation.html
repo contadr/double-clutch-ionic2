@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-navbar color="danger">
+    <ion-title><font>{{lu_name}} <font style="font-size:1.5rem;">({{cart_name}})</font></font></ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content no-padding>
+	<div  class="dct-generation-card" *ngFor="let gn of gns" 
+	(click)="gnClick(gn.gn_id, gn.gn_name, gn.gn_minyear, gn.gn_maxyear)">
+		<div class="dct-generation-card-header">
+			{{gn.gn_name}} <font>({{gn.gn_minyear}} ~ {{gn.gn_maxyear}})</font>
+		</div>
+		<div class="dct-generation-card-thumnail">
+			<img src="http://contadr.org{{gn.gn_imgpath}}">
+		</div>
+	</div>
+</ion-content>

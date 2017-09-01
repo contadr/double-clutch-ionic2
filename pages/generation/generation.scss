@@ -1,0 +1,47 @@
+page-generation {
+
+	ion-title font {
+		font-size: 2rem;
+	}
+
+	.dct-generation-card {
+		height:15rem;
+		width:100%;
+		box-shadow: 1px 2px 4px rgba(0, 0, 0, .45);
+		background-color: white;
+		margin-top: 1.7rem !important;
+		margin-bottom: 1.7rem !important;
+		border-bottom: 1px solid rgba(0, 0, 0,.225);
+		overflow: hidden;
+	}
+	.dct-generation-card:active {
+		opacity: .7;
+	}
+
+	.dct-generation-card-header {
+		width:100%;
+		height:16%;
+		padding: 0.4rem;
+		font-size: 1.5rem;
+		color: #4c4c4c;
+		text-align: center;
+	}
+	.dct-generation-card-header font {
+		font-size: 1.1rem;
+	}
+
+	.dct-generation-card-thumnail {
+		opacity: .6;
+		width:100%;
+		height:84%;
+		position:relative;
+		overflow: hidden;
+		img {
+			width:100%;
+			height:auto;
+			position:absolute;
+			margin:auto;
+			top:-3rem; bottom:0; left:0; right:0;
+		}
+	}
+}

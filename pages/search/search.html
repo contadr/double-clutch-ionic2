@@ -1,0 +1,147 @@
+<ion-header>
+  	<ion-navbar color="danger">
+    	<ion-title>
+    		<font class="font-small">
+    			<font class="font-large">더클</font> 백과사전
+    		</font>
+    	</ion-title>
+  	</ion-navbar>
+</ion-header>
+
+<ion-content no-padding>
+		<ion-scroll scrollY="true" class="scroll-left">
+			<div class="space-04"></div>
+
+			<button class="inner_left" ion-button color="light" small block (click)="countryClick_kr()">
+				<img class="img-country" src="assets/img/flag/KR.jpg">대한민국
+			</button><div style=""></div>
+			<div *ngFor="let kr of krs">
+				<button class="inner_left" ion-button color="dark" clear small block 
+				[disabled]="current_br_id==kr.br_id" (click)="brClick(kr.br_id)">
+					<img class="img-brend" src="assets/img/emblem/{{kr.br_engName}}.jpg">{{kr.br_korName}}
+				</button><div class="space-01"></div>
+			</div><div class="space-01"></div>
+
+			<button class="inner_left" ion-button color="light" small block (click)="countryClick_us()">
+				<img class="img-country" src="assets/img/flag/US.jpg">미국
+			</button><div class="space-01"></div>
+			<div *ngFor="let us of uss">
+				<button class="inner_left" ion-button color="dark" clear small block 
+			  	[disabled]="current_br_id==us.br_id" (click)="brClick(us.br_id)">
+			  		<img class="img-brend" src="assets/img/emblem/{{us.br_engName}}.jpg">{{us.br_korName}}
+			  	</button><div class="space-01"></div>
+			</div><div class="space-01"></div>
+
+			<button class="inner_left" ion-button color="light" small block (click)="countryClick_de()">
+				<img class="img-country" src="assets/img/flag/DE.jpg">독일
+			</button><div class="space-01"></div>
+			<div *ngFor="let de of des">
+				<button class="inner_left" ion-button color="dark" clear small block 
+				[disabled]="current_br_id==de.br_id" (click)="brClick(de.br_id)">
+					<img class="img-brend" src="assets/img/emblem/{{de.br_engName}}.jpg">{{de.br_korName}}
+				</button><div class="space-01"></div>
+			</div><div class="space-01"></div>
+
+			<button class="inner_left" ion-button color="light" small block (click)="countryClick_it()">
+				<img class="img-country" src="assets/img/flag/IT.jpg">이탈리아
+			</button><div class="space-01"></div>
+			<div *ngFor="let it of its">
+				<button class="inner_left" ion-button color="dark" clear small block 
+				[disabled]="current_br_id==it.br_id" (click)="brClick(it.br_id)">
+					<img class="img-brend" src="assets/img/emblem/{{it.br_engName}}.jpg">{{it.br_korName}}
+				</button><div class="space-01"></div>
+			</div><div class="space-01"></div>
+
+			<button class="inner_left" ion-button color="light" small block (click)="countryClick_gb()">
+				<img class="img-country" src="assets/img/flag/GB.jpg">영국
+			</button><div class="space-01"></div>
+			<div *ngFor="let gb of gbs">
+				<button class="inner_left" ion-button color="dark" clear small block 
+				[disabled]="current_br_id==gb.br_id" (click)="brClick(gb.br_id)">
+					<img class="img-brend" src="assets/img/emblem/{{gb.br_engName}}.jpg">{{gb.br_korName}}
+				</button><div class="space-01"></div>
+			</div><div class="space-01"></div>
+
+			<button class="inner_left" ion-button color="light" small block (click)="countryClick_fr()">
+				<img class="img-country" src="assets/img/flag/FR.jpg">프랑스
+			</button><div class="space-01"></div>
+			<div *ngFor="let fr of frs">
+				<button class="inner_left" ion-button color="dark" clear small block 
+				[disabled]="current_br_id==fr.br_id" (click)="brClick(fr.br_id)">
+					<img class="img-brend" src="assets/img/emblem/{{fr.br_engName}}.jpg">{{fr.br_korName}}
+				</button><div class="space-01"></div>
+			</div><div class="space-01"></div>
+
+			<button class="inner_left" ion-button color="light" small block (click)="countryClick_se()">
+				<img class="img-country" src="assets/img/flag/SE.jpg">스웨덴
+			</button><div class="space-01"></div>
+			<div *ngFor="let se of ses">
+				<button class="inner_left" ion-button color="dark" clear small block 
+				[disabled]="current_br_id==se.br_id" (click)="brClick(se.br_id)">
+					<img class="img-brend" src="assets/img/emblem/{{se.br_engName}}.jpg">{{se.br_korName}}
+				</button><div class="space-01"></div>
+			</div><div class="space-01"></div>
+
+			<button class="inner_left" ion-button color="light" small block (click)="countryClick_jp()">
+				<img class="img-country" src="assets/img/flag/JP.jpg">일본
+			</button><div class="space-01"></div>
+			<div *ngFor="let jp of jps">
+				<button class="inner_left" ion-button color="dark" clear small block 
+				[disabled]="current_br_id==jp.br_id" (click)="brClick(jp.br_id)">
+					<img class="img-brend" src="assets/img/emblem/{{jp.br_engName}}.jpg">{{jp.br_korName}}
+				</button><div class="space-01"></div>
+			</div><div class="space-01"></div>
+
+			<button class="inner_left" ion-button color="light" small block (click)="countryClick_cn()">
+				<img class="img-country" src="assets/img/flag/CN.jpg">중국
+			</button><div class="space-01"></div>
+			<div *ngFor="let cn of cns">
+				<button class="inner_left" ion-button color="dark" clear small block 
+				[disabled]="current_br_id==cn.br_id" (click)="brClick(cn.br_id)">
+					<img class="img-brend" src="assets/img/emblem/{{cn.br_engName}}.jpg">{{cn.br_korName}}
+				</button><div class="space-01"></div>
+			</div><div class="space-01"></div>
+
+			<button class="inner_left" ion-button color="light" small block (click)="countryClick_in()">
+				<img class="img-country" src="assets/img/flag/IN.jpg">인도
+			</button><div class="space-01"></div>
+			<div *ngFor="let in of ins">
+				<button class="inner_left" ion-button color="dark" clear small block 
+				[disabled]="current_br_id==in.br_id" (click)="brClick(in.br_id)">
+					<img class="img-brend" src="assets/img/emblem/{{in.br_engName}}.jpg">{{in.br_korName}}
+				</button><div class="space-01"></div>
+			</div><div class="space-01"></div>
+
+			<button class="inner_left" ion-button color="light" small block (click)="countryClick_au()">
+				<img class="img-country" src="assets/img/flag/AU.jpg">호주
+			</button><div class="space-01"></div>
+			<div *ngFor="let au of aus">
+				<button class="inner_left" ion-button color="dark" clear small block 
+				[disabled]="current_br_id==au.br_id" (click)="brClick(au.br_id)">
+					<img class="img-brend" src="assets/img/emblem/{{au.br_engName}}.jpg">{{au.br_korName}}
+				</button><div class="space-01"></div>
+			</div><div class="space-01"></div>
+
+			<button class="inner_left" ion-button color="light" small block (click)="countryClick_cz()">
+				<img class="img-country" src="assets/img/flag/CZ.jpg">체코
+			</button><div class="space-01"></div>
+			<div *ngFor="let cz of czs">
+				<button class="inner_left" ion-button color="dark" clear small block 
+				[disabled]="current_br_id==cz.br_id" (click)="brClick(cz.br_id)">
+					<img class="img-brend" src="assets/img/emblem/{{cz.br_engName}}.jpg">{{cz.br_korName}}
+				</button><div class="space-01"></div>
+			</div><div class="space-01"></div>
+
+		</ion-scroll>
+		<ion-scroll scrollY="true" class="scroll-right">
+			<div class="space-10"></div>
+			<div *ngFor="let cart of carts">
+				<div class="cart-button" (click)="cartClick(cart.cartype.col)">
+					{{cart.cartype.name}}<font>{{cart.count}}&nbsp;</font>
+				</div>
+				<div *ngFor="let lu of lus" [hidden]="current_cart!=cart.cartype.col">
+					<button ion-button color="dark" clear small block (click)="luClick(lu.lu_id, lu.lu_name, cart.cartype.col, cart.cartype.name)">{{lu.lu_name}}</button>
+				</div>
+			</div>
+		</ion-scroll>
+</ion-content>

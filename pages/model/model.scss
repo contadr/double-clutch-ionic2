@@ -1,0 +1,81 @@
+page-model {
+
+	ion-title {
+		.font-small {
+		  	font-size: 1.2rem;
+		}
+		.font-large {
+			font-size: 1.8rem;
+		}
+	}
+
+	.title-ios {
+		padding-right: 0px;
+	}
+
+	.dct-model-card {
+		height:16.5rem;
+		width:100%;
+		box-shadow: 0px 0px 5px rgba(204, 82, 82, .45);
+		background-color: white;
+		padding: 0.4rem;
+		margin-top: 1.4rem !important;
+		margin-bottom: 1.4rem !important;
+		border-top: 1px solid rgba(204, 82, 82,.225);
+		border-bottom: 1px solid rgba(204, 82, 82,.225);
+	}
+	.dct-model-card:active {
+		opacity: .7;
+		box-shadow: 0px 0px 5px rgba(204, 82, 82, .85);
+	}
+
+	.dct-model-card-thumnail {
+		width:15rem;
+		height:100%;
+		float:left;
+		position:relative;
+		img {
+			width:100%;
+			height:auto;
+			position:absolute;
+			margin:auto;
+			top:0; bottom:0; left:0; right:0;
+			padding-right:0.4rem;
+		}
+	}
+
+	.dct-model-card-container {
+		width:calc(100% - 15rem);
+		height:100%;
+		float:left;
+		padding-left:1rem;
+		border-left: 1px solid rgba(204, 82, 82, .4);
+		.dct-model-card-header {
+			text-align: center;
+			font {
+				font-size: 1.5rem;
+				color:#cc5252;
+			}
+			margin-bottom: 1.5rem;
+		}
+		.dct-model-card-contents {
+			height:2rem;
+			margin-top:0.5rem;
+		}
+		.font-danger{
+			background-color: #cc5252;
+			border-radius: 0.3rem 0.3rem 0.3rem 0.3rem;
+			padding: 0.3rem;
+			font-size: 1.2rem;
+			color:white;
+		}
+		.font-primary{
+			font-size: 1.1rem;
+			color:#488aff;
+		}
+		.font-dark{
+			font-size: 1.1rem;
+			color:#4c4c4c;
+		}
+	}
+}

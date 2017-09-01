@@ -1,0 +1,68 @@
+<ion-header>
+  <ion-navbar color="danger">
+    <ion-title>
+      <font class="font-small">
+        <font class="font-large">더</font>블 
+        <font class="font-large">클</font>러치
+      </font>
+    </ion-title>
+  </ion-navbar>
+  <ion-toolbar>
+    <button ion-button color="danger" icon-left (click)="youtube()" class="youtube">
+		<ion-icon name="logo-youtube"></ion-icon>유튜브 채널
+	</button>
+	<button ion-button color="primary" icon-left (click)="facebook()" class="facebook">
+		<ion-icon name="logo-facebook"></ion-icon>페이스북 페이지
+	</button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content no-padding>
+
+	<ion-slides loop="true" autoplay="4000" pager class="slides-top">
+		<ion-slide>
+			<img src="assets/img/home-main1.jpg">
+		</ion-slide>
+		<ion-slide>
+			<img src="assets/img/home-main2.jpg">
+		</ion-slide>
+		<ion-slide>
+			<img src="assets/img/home-main3.jpg">
+		</ion-slide>
+	</ion-slides>
+
+	<div class="buttons-first">
+		<button ion-button color="primary" outline small icon-left (click)="knowledgeCar()">
+			<ion-icon name="md-bulb"></ion-icon>자동차 상식
+		</button>
+		<button ion-button color="primary" outline small icon-left (click)="bestsearchCar()">
+			<ion-icon name="md-car"></ion-icon>많이 찾는 자동차
+		</button>
+	</div>
+
+	<div class="space-10"></div>
+	<button ion-button color="danger" large clear block>
+		<img src="assets/img/dct-outline.png" style="height:60%;width:auto;"> 더클에서 알려드립니다!
+	</button>
+	<div class="buttons-second">
+		<div (click)="hotCar()">
+			<p>핫한 자동차</p>
+		</div>
+		<div (click)="hotVideo()">
+			<p>핫한 영상</p>
+		</div>
+		<div (click)="newCar()">
+			<p>신차 정보</p>
+		</div>
+		<div (click)="driveCource()">
+			<p>드라이브</p>
+		</div>
+		<div (click)="blackBox()">
+			<p>블랙박스</p>
+		</div>
+		<div (click)="carWash()">
+			<p>세차장 정보</p>
+		</div>
+	</div><div class="space-10"></div>
+
+</ion-content>
